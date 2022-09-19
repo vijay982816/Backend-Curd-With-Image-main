@@ -24,6 +24,9 @@ connectToMongo()
 
 
 // Available Routes
+app.get('/', (req, res) => {
+    res.send('your app is working ')
+})
 app.use('/api/users/', require('./Routes/User.js'));
 
 
